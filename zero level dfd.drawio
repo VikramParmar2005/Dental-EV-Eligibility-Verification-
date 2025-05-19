@@ -1,0 +1,37 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36" version="26.2.2">
+  <diagram name="Page-1" id="G9TKrAKaRSxaSljuQCVz">
+    <mxGraphModel dx="1044" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fUKRbtW6wPBjIPK1-tPF-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fUKRbtW6wPBjIPK1-tPF-8" target="fUKRbtW6wPBjIPK1-tPF-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fUKRbtW6wPBjIPK1-tPF-8" value="Doctor (User)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="210" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fUKRbtW6wPBjIPK1-tPF-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fUKRbtW6wPBjIPK1-tPF-9" target="fUKRbtW6wPBjIPK1-tPF-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fUKRbtW6wPBjIPK1-tPF-9" value="Smile Guard Dental EV Web&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="200" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fUKRbtW6wPBjIPK1-tPF-11" value="(Login/Register, Search, Check Eligibility)" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="175" y="210" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fUKRbtW6wPBjIPK1-tPF-12" value="Patient Database |&amp;nbsp; | Insurance System |" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fUKRbtW6wPBjIPK1-tPF-14" value="Search for a Patient" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="215" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fUKRbtW6wPBjIPK1-tPF-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.995;entryY=0.66;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fUKRbtW6wPBjIPK1-tPF-12" target="fUKRbtW6wPBjIPK1-tPF-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fUKRbtW6wPBjIPK1-tPF-16" value="Check eligibility via code (e.g. &lt;code data-start=&quot;1759&quot; data-end=&quot;1766&quot;&gt;D0120&lt;/code&gt;)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="250" width="230" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

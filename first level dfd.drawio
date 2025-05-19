@@ -1,0 +1,143 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36" version="26.2.2">
+  <diagram name="Page-1" id="by13Ic-5B0D5nHwh265d">
+    <mxGraphModel dx="1044" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KAmWQaT2bphG1lGb8P75-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-1" target="KAmWQaT2bphG1lGb8P75-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-1" value="doctors" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-4" target="KAmWQaT2bphG1lGb8P75-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-4" target="KAmWQaT2bphG1lGb8P75-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-4" value="1.0&amp;nbsp;&lt;div&gt;Doctor&amp;nbsp;&lt;/div&gt;&lt;div&gt;Authentication&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="520" y="55" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-6" value="insurance type" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-7" target="KAmWQaT2bphG1lGb8P75-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-7" target="KAmWQaT2bphG1lGb8P75-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-7" value="2.0&amp;nbsp;&lt;div&gt;PT Serch&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="230" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-11" target="KAmWQaT2bphG1lGb8P75-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-11" target="KAmWQaT2bphG1lGb8P75-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-11" value="PT Database" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="435" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-13" target="KAmWQaT2bphG1lGb8P75-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-13" target="KAmWQaT2bphG1lGb8P75-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-13" target="KAmWQaT2bphG1lGb8P75-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-13" value="3.0&amp;nbsp;&lt;div&gt;Check Eligibility&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="505" y="420" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-15" target="KAmWQaT2bphG1lGb8P75-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-15" value="Insurance type" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="435" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.417;entryY=0.083;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-7" target="KAmWQaT2bphG1lGb8P75-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-22" target="KAmWQaT2bphG1lGb8P75-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-22" value="Display Result" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="505" y="605" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-24" value="Report" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.006;entryY=0.404;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-11" target="KAmWQaT2bphG1lGb8P75-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.083;entryY=1.167;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KAmWQaT2bphG1lGb8P75-22" target="KAmWQaT2bphG1lGb8P75-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-44" value="Login Credentials" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="290" y="80" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-48" value="Authentication Status (Success/Failure)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="160" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-49" value="&lt;strong data-end=&quot;595&quot; data-start=&quot;572&quot;&gt;Doctor Session Info&lt;/strong&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="258" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-52" value="atient Search Request (Name, ID, DOB)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="298" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-53" value="Search Query" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="720" y="298" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-54" value="Patient Details" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="720" y="268" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-55" value="Selected Patient Details" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="435" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-57" value="&lt;strong data-end=&quot;1033&quot; data-start=&quot;1003&quot;&gt;Insurance Code / Plan Type&lt;/strong&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="670" y="435" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-60" value="Eligibility Request" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="480" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-61" value="&lt;ul data-end=&quot;1217&quot; data-start=&quot;858&quot;&gt;&lt;li class=&quot;&quot; data-end=&quot;1217&quot; data-start=&quot;1118&quot;&gt;&lt;p class=&quot;&quot; data-end=&quot;1217&quot; data-start=&quot;1120&quot;&gt; &lt;strong data-end=&quot;1217&quot; data-start=&quot;1176&quot;&gt;Eligibility Status / Coverage Details&lt;/strong&gt;&lt;/p&gt;&lt;br/&gt;&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="490" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-62" value="Eligibility Results (Covered / Not Covered / Limits / Validity)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="618" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-63" value="Final Eligibility Report" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="710" y="618" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KAmWQaT2bphG1lGb8P75-64" value="Eligibility Summary Report" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="700" y="648" width="160" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

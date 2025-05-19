@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smile Guard Reports - Dental insurance reports and analytics for healthcare professionals.">
+    <title>Smile Guard - Reports</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reports.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo" data-aos="fade-right">
+            <h1>Smile Guard</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Dashboard</a></li>
+                <li><a href="login.html">Patients</a></li>
+                <li><a href="login.html">Eligibility Check</a></li>
+                <li><a href="reports.html" class="active">Reports</a></li>
+                <li><a href="#logout" id="logoutBtn">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        <section class="page-header" data-aos="fade-up">
+            <h1>Reports Dashboard</h1>
+            <p>Generate, analyze, and export comprehensive reports for your dental practice</p>
+        </section>
+
+        <!-- Reports Controls -->
+        <section class="reports-controls" data-aos="fade-up" data-aos-delay="100">
+            <div class="controls-container">
+                <div class="date-range">
+                    <h3>Date Range</h3>
+                    <div class="date-inputs">
+                        <div class="date-field">
+                            <label for="start-date">From:</label>
+                            <input type="date" id="start-date" name="start-date">
+                        </div>
+                        <div class="date-field">
+                            <label for="end-date">To:</label>
+                            <input type="date" id="end-date" name="end-date">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="generate-report" class="btn primary-btn">
+                        <i class="fas fa-file-alt"></i> Generate Report
+                    </button>
+                    <div class="export-options">
+                        <button class="btn secondary-btn" id="export-pdf"><i class="fas fa-file-pdf"></i> Export PDF</button>
+                        <button class="btn secondary-btn" id="export-csv"><i class="fas fa-file-csv"></i> Export CSV</button>
+                        <button class="btn secondary-btn" id="export-excel"><i class="fas fa-file-excel"></i> Export Excel</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Report Types Section -->
+        <section class="report-types" data-aos="fade-up" data-aos-delay="200">
+            <h2>Report Types</h2>
+            <div class="report-cards">
+                <!-- Financial Reports Card -->
+                <div class="report-card" data-report-type="financial">
+                    <div class="card-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Financial Reports</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Analyze revenue, expenses, insurance reimbursements, and accounts receivable.</p>
+                        <ul class="report-features">
+                            <li>Insurance Revenue Analysis</li>
+                            <li>Claims by Status</li>
+                            <li>Revenue by Insurance Provider</li>
+                            <li>Accounts Receivable Aging</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn view-report-btn" data-type="financial">View Reports</button>
+                    </div>
+                </div>
+
+                <!-- Insurance Verification Reports Card -->
+                <div class="report-card" data-report-type="insurance-verification">
+                    <div class="card-header">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Insurance Verification Reports</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Track verification status across patients and insurance providers.</p>
+                        <ul class="report-features">
+                            <li>Verification Status by Provider</li>
+                            <li>Upcoming Appointments Verification</li>
+                            <li>Expiring Benefits Alerts</li>
+                            <li>Verification Response Time</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn view-report-btn" data-type="insurance-verification">View Reports</button>
+                    </div>
+                </div>
+
+                <!-- Denial Analysis Reports Card -->
+                <div class="report-card" data-report-type="denial-analysis">
+                    <div class="card-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>Denial Analysis Reports</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Identify patterns in claim denials to improve acceptance rates.</p>
+                        <ul class="report-features">
+                            <li>Denial Reasons by Frequency</li>
+                            <li>Denial Trends Over Time</li>
+                            <li>Denials by Insurance Provider</li>
+                            <li>Denial Recovery Rate</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn view-report-btn" data-type="denial-analysis">View Reports</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Report Content Section - Initially Hidden, Shown When Report Type is Selected -->
+        <section id="report-content" class="report-content hidden" data-aos="fade-up" data-aos-delay="300">
+            <!-- Content will be loaded dynamically based on selected report type -->
+            <div class="report-header">
+                <h2 id="selected-report-title">Report Title</h2>
+                <div class="report-filters">
+                    <select id="provider-filter" aria-label="Filter by provider">
+                        <option value="">All Providers</option>
+                        <option value="delta">Delta Dental</option>
+                        <option value="cigna">Cigna</option>
+                        <option value="aetna">Aetna</option>
+                        <option value="metlife">MetLife</option>
+                    </select>
+                    <select id="status-filter" aria-label="Filter by status">
+                        <option value="">All Statuses</option>
+                        <option value="pending">Pending</option>
+                        <option value="approved">Approved</option>
+                        <option value="denied">Denied</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="report-visualization">
+                <div class="chart-container">
+                    <!-- Chart will be rendered here -->
+                    <div class="placeholder-chart" id="report-chart"></div>
+                </div>
+                <div class="summary-stats">
+                    <div class="stat-card">
+                        <h4>Total Claims</h4>
+                        <p class="stat-value" id="total-claims">--</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Approval Rate</h4>
+                        <p class="stat-value" id="approval-rate">--</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Average Processing Time</h4>
+                        <p class="stat-value" id="avg-processing">--</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="report-data-table">
+                <table id="report-table">
+                    <thead>
+                        <tr>
+                            <th>Patient ID</th>
+                            <th>Patient Name</th>
+                            <th>Insurance Provider</th>
+                            <th>Procedure Code</th>
+                            <th>Status</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="report-data">
+                        <!-- Table data will be populated dynamically by JavaScript -->
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <button class="pagination-btn" id="prev-page"><i class="fas fa-angle-left"></i></button>
+                    <span id="page-indicator">Page 1 of 1</span>
+                    <button class="pagination-btn" id="next-page"><i class="fas fa-angle-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Smile Guard. All rights reserved.</p>
+        <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<script src="reports.js"></script>
+<script src="Reports_new.js"></script>
+    
+</body>
+</html>

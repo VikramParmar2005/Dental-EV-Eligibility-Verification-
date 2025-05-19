@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Smile Guard - Your trusted dental insurance management platform">
+    <title>Smile Guard - Create Account</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/smile-guard-logo.png" alt="Smile Guard Logo" class="logo-img">
+            <h1>Smile Guard</h1>
+            <span class="tagline">Dental Insurance Management</span>
+        </div>
+    </header>
+    
+    <div class="signup-container" data-aos="fade-up">
+        <h1>Create Your Account</h1>
+        <form id="signupForm" method="post" onsubmit="return validateForm()">
+            <div class="form-group">
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="firstName"><i class="fas fa-user"></i> First Name</label>
+            </div>
+            <div class="form-group">
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="lastName"><i class="fas fa-user"></i> Last Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" required>
+                <label for="password"><i class="fas fa-lock"></i> Password</label>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" name="phone" required>
+                <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+            </div>            
+            <div class="form-group">
+                <select id="insuranceType" name="insuranceType" required>
+                    <option value="">Select Insurance Type</option>
+                    <option value="individual">Individual Plan</option>
+                    <option value="family">Family Plan</option>
+                    <option value="business">Business Plan</option>
+                    <option value="ppo">PPO Plan</option>
+                    <option value="hmo">HMO Plan</option>
+                    <option value="medicare">Medicare Advantage</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select id="state" name="state" required>
+                    <option value="">Select Your State</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NY">New York</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="CT">Connecticut</option>
+                </select>
+            </div>
+            <button type="submit" name="createAccount" class="signup-btn"><i class="fas fa-user-plus"></i> Create Account</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="login.html">Log in</a></p>
+        
+        <div class="security-notice" data-aos="fade-up" data-aos-delay="200">
+            <p><i class="fas fa-shield-alt"></i> Your information is protected by industry-leading encryption</p>
+            <p><i class="fas fa-check-circle"></i> HIPAA compliant security measures</p>
+        </div>
+    </div>
+
+    <?php 
+    $con = mysqli_connect('localhost', 'root', '', 'signup');
+    if (!$con) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+
+    if (isset($_POST['createAccount']))
+    {
+        $firstName = $_POST['firstName'];
+        $lastName = $_POST['lastName'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $phone = $_POST['phone'];
+        $insuranceType = $_POST['insuranceType'];
+        $state = $_POST['state'];
+        
+        $query = "INSERT INTO mydata(firstName, lastName, email, password, phone, insurance_type, state) 
+        VALUES('$firstName', '$lastName', '$email', '$password', '$phone', '$insuranceType', '$state')";
+        $execute = mysqli_query($con, $query);
+        
+    }
+?>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="signup.js"></script>
+</body>
+</html>

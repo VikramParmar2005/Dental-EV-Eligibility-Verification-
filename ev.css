@@ -1,0 +1,467 @@
+/* SmileGuard - Dental Insurance Eligibility System
+   Enhanced CSS with modern design */
+
+/* FONT IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* RESET & GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #1a73e8;
+  --primary-light: #4285f4;
+  --primary-dark: #0d47a1;
+  --accent: #00bcd4;
+  --text-primary: #333;
+  --text-secondary: #666;
+  --light-bg: #f5f7fa;
+  --card-bg: #ffffff;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --border-radius: 10px;
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* HEADER STYLING */
+header {
+  background: var(--primary);
+  background: linear-gradient(90deg, var(--primary) 0%, var(--primary-light) 100%);
+  padding: 1.2rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeInDown 0.6s ease-out;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0 20px;
+}
+
+/* MAIN CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 6rem auto 2rem;
+  padding: 0 20px;
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* CARDS STYLING */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.card-header {
+  padding: 1.2rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* SEARCH BOX STYLING */
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+select, 
+button,
+input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #d1d9e6;
+  border-radius: 8px;
+  background: white;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
+  transition: var(--transition);
+}
+
+select {
+  flex-grow: 1;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 8.825L1.175 4 2.238 2.938 6 6.7 9.763 2.938 10.825 4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 2.5rem;
+}
+
+select:focus, 
+button:focus,
+input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2);
+}
+
+button {
+  cursor: pointer;
+  background: var(--primary);
+  color: white;
+  font-weight: 500;
+  min-width: 120px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+button:hover {
+  background: var(--primary-dark);
+}
+
+/* PATIENT INFO SECTION */
+.patient-info {
+  margin-top: 1rem;
+}
+
+.patient-info h2 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* TABLE STYLING */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 0.9rem;
+  text-align: left;
+  border-bottom: 1px solid #eaedf3;
+}
+
+thead th {
+  background: #f8fafd;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+tbody tr:hover {
+  background: #f8fafd;
+}
+
+/* Add these styles to highlight the Amalgam row in the coverage details table */
+.benefits-table tbody tr:first-child {
+  background-color: white; /* Bright green color matching your highlight */
+  color: #000000; /* Black text for better readability on bright green */
+}
+
+/* Optional hover effect for the highlighted row */
+.benefits-table tbody tr:first-child:hover {
+  background-color: white; /* Slightly darker green on hover */
+}
+
+/* If you want to target the row by benefit class name instead of position */
+.benefits-table tr.amalgam-row {
+  background-color: white;
+  color: #000000;
+}
+
+/* Style adjustments for the benefits table for better readability */
+.benefits-table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.benefits-table th {
+  background-color: var(--dark);
+  color: var(--text-light);
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.benefits-table td {
+  padding: 10px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Adding some hover effects to other rows for better UX */
+.benefits-table tbody tr:not(:first-child):hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* SEARCH BAR FOR CODES */
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2rem 0;
+  background: white;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+}
+
+.search-bar input {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.search-bar button {
+  white-space: nowrap;
+}
+
+/* STATUS INDICATORS */
+.status {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-active {
+  background: rgba(40, 199, 111, 0.12);
+  color: #28c76f;
+}
+
+.status-inactive {
+  background: rgba(234, 84, 85, 0.12);
+  color: #ea5455;
+}
+
+/* SECTION HEADERS */
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 2rem 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+h3::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 16px;
+  background: var(--primary);
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  .container {
+      width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-box {
+      flex-direction: column;
+  }
+  
+  .card-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+  }
+  
+  header h1 {
+      font-size: 1.5rem;
+  }
+  
+  .search-bar {
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  th, td {
+      padding: 0.7rem;
+      font-size: 0.85rem;
+  }
+  
+  .patient-info h2 {
+      font-size: 1.2rem;
+  }
+  
+  table {
+      display: block;
+      overflow-x: auto;
+  }
+}
+
+/* UTILITY CLASSES */
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+/* ADDITIONAL ENHANCEMENTS */
+/* Info tooltips */
+.info-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+  margin-left: 5px;
+}
+
+.info-tooltip::after {
+  content: "?";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: var(--primary-light);
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.info-tooltip .tooltip-content {
+  visibility: hidden;
+  width: 200px;
+  background: #333;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-tooltip:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Buttons with different states */
+.btn-primary {
+  background: var(--primary);
+}
+
+.btn-success {
+  background: #28c76f;
+}
+
+.btn-warning {
+  background: #ff9f43;
+}
+
+.btn-info {
+  background: var(--accent);
+}
+
+/* Print-friendly styles */
+@media print {
+  body {
+    background: white;
+  }
+  
+  header, 
+  .search-box,
+  .search-bar {
+    display: none;
+  }
+  
+  .container {
+    margin: 0;
+    width: 100%;
+    max-width: none;
+  }
+  
+  .card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    break-inside: avoid;
+  }
+  
+  .card-header {
+    background: #f2f2f2;
+    color: black;
+  }
+  
+
+}
